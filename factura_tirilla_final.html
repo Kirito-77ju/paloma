@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soap Garden</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fef4f7; /* Soft cherry color */
+    }
+    header {
+      background-color: #e75480; /* Strong cherry */
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header-text h1 {
+      font-size: 2.5rem; /* Increased size */
+      font-weight: bold;
+      font-family: 'Georgia', serif; /* More elegant and striking font */
+      margin-bottom: 0.2rem;
+    }
+    .header-text p {
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-top: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #e75480;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+      align-items: start;
+    }
+    .product-card {
+      background: #fff;
+      border: 1px solid #ececec;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      min-height: 310px;
+    }
+    .product-card img {
+      width: 220px;
+      height: 220px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .product-card h3 {
+      color: #e75480;
+      margin: 0.3rem 0;
+    }
+    .price {
+      font-size: 1.5rem;
+      margin: 0.05rem 0;
+      color: #c2185b;
+    }
+    .product-card p {
+      flex-grow: 1;
+      margin-bottom: 0.1rem;
+    }
+    button {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 80%;
+      margin-top: auto;
+    }
+    button:hover {
+      background-color: #ad1457;
+    }
+    footer.footer {
+      background: #e75480;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" class="logo">
+    <div class="header-text">
+      <h1>Soap Garden</h1>
+      <p>Immerse yourself in softness and natural aromas</p>
+    </div>
+  </header>
+  <div class="container">
+    <h2>Products</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="jabon_flor.png" alt="Cherry Blossom Soap">
+        <h3>Cherry Blossom Soap</h3>
+        <p class="price">$7,900 COP</p>
+        <p>Handmade soap with a delicate cherry blossom fragrance. Perfect for gifting or pampering yourself.</p>
+        <button onclick="alert('Thank you for your purchase. We will soon activate the payment gateway.')">Buy now</button>
+      </div>
+      <div class="product-card">
+        <img src="jabon_rosa.png" alt="Rose Soap">
+        <h3>Rose Soap</h3>
+        <p class="price">$8,500 COP</p>
+        <p>Handmade soap with the fragrance of fresh roses. Provides softness and a delicate aroma for your skin.</p>
+        <button onclick="alert('This product will be available soon.')">Buy</button>
+      </div>
+      <div class="product-card">
+        <img src="jabon_miel.png" alt="Honey Soap">
+        <h3>Honey Soap</h3>
+        <p class="price">$9,200 COP</p>
+        <p>Nourishing soap with natural honey extracts, ideal for hydrating and softening the skin.</p>
+        <button onclick="alert('This product will be available soon.')">Buy</button>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2025 Soap Garden. All rights reserved.</p>
+  </footer>
+</body>
+</html>
